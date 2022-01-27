@@ -503,6 +503,7 @@ class RootIndex extends React.Component {
               <div className="related">
                 <h2>Ammattilaisten kasino-arviot - Tutustu ja testaa!</h2>
                 <Slider {...settings}>
+                {console.log(kasino.edges)}
                 {kasino.edges.map(({node}) => (
                   <div key={`ikt${node.kasinonSlug}`} className="scrollerKasino">
                     <a href={`/kokemuksia/${node.kasinonSlug}/`} >

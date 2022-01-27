@@ -575,9 +575,9 @@ export const pageQuery = graphql`
       seoFaq4
       seoFaq5
       seoFaq6
-      saannot {
-        json
-      }
+      # saannot {
+      #   json
+      # }
       seoBrowserTitle
       seoMetaDescription
       publishDate(formatString:"DD.MM.YYYY")
