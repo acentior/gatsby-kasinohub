@@ -1,2 +1,1 @@
-# gatsby-kasinohub
-Kasinohub.com
+

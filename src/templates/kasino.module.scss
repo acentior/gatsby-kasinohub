@@ -1,0 +1,736 @@
+$highlight: #5e3994;
+$highlightLinear: #9460df;
+$darkgrey: #1d1d1d;
+$white: #fff;
+.tahdet {
+  text-align: center;
+    img {
+    max-height: 24px;
+    width: auto;
+    margin: .5em auto;
+  }
+}
+.kasino {
+  padding: 0;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    margin-top: 0px;
+  }
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    padding: 0;
+  }
+  .kasinoBlock {
+    width: 100%;
+    background: $highlight;
+    background: linear-gradient(0deg, $white 0%, $highlight 100%);
+    box-shadow: 0px 9px 8px -6px #5e399494;
+    z-index: 0;
+    @media (max-width: 700px) {
+      margin-bottom: 0;
+      background: $white;
+      box-shadow: none;
+    }
+    .kasinoTr {
+      height: auto;
+      display: flex;
+      overflow: hidden;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 1% 0;
+      @media (max-width: 997px) {
+        margin-bottom: 0;
+        margin-top: 97px;
+        padding: 0;
+      }
+      @media (max-width: 630px) {
+        height: auto !important;
+        margin-top: 98px;
+        padding-top: 0;
+      }
+      td {
+        padding: 2em;
+        display: block;
+        max-width: 1000px;
+        width: 85%;
+        margin: auto;
+        align-items: center;
+        border-bottom: none;
+        color: $white;
+        @media (max-width: 700px) {
+          background: $white;
+          color: $darkgrey;
+          border: 0;
+          box-shadow: none;
+          width: 100%;
+          padding: 0;
+        }
+        @media (max-width: 630px) {
+          flex-wrap: wrap;
+        }
+        .top {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          @media (max-width: 700px) {
+            width: 100%;
+            background:$white;
+            background: linear-gradient(0deg, $white 11%, $highlight 97%);
+          }
+          h1 {
+            width: 50%;
+            font-weight: 600;
+            @media (max-width: 997px) {
+              color: $white;
+            }
+            @media (max-width:700px) {
+              width: 100%;
+              margin: 1em .2em 0;
+              font-size: 2.7em;
+            }
+          }
+          .kasinonLogo {
+            width: 50%;
+            max-width: 220px;
+            margin: auto;
+            @media (max-width:700px) {
+              width: 100%;
+            }
+          }
+          .tahdet {
+            width: 100%;
+            text-align: center;
+            @media (max-width:700px) {
+              margin: 1em auto;
+            }
+          }
+        }
+        .center {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          .vahvuus {
+            width: 50%;
+            @media (max-width:700px) {
+              width: 90%;
+              order: 2;
+              margin: auto;
+            }
+            .icon {
+              width: 16px;
+            }
+            ul li::before {
+              display: none;
+            }
+          }
+          .kuvaus {
+            width: 50%;
+            @media (max-width:700px) {
+              width: 90%;
+              order: 1;
+              margin: auto;
+            }
+          }
+        }
+        .bottom {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          .btn {
+            width: 33.33%;
+            margin: auto;
+            text-align: center;
+            @media (max-width: 700px) {
+              width: 100%;
+              margin: 2em auto;
+              order: 3;
+            }
+            .bonusBtn {
+              padding-top: 6px;
+              padding-bottom: 6px;
+              font-weight: 600;
+              letter-spacing: 1px;
+            }
+            .closed {
+              padding-top: 6px;
+              padding-bottom: 6px;
+              font-weight: 600;
+              letter-spacing: 1px;
+              background:#666666;
+              border:none;
+              cursor: context-menu;
+            }
+          }
+          .offerItem {
+            width: 33.33%;
+            text-align: center;
+            float: left;
+            @media (max-width: 700px) {
+              width: 50%;
+              order: 1;
+            }
+            .offer {
+              font-weight: bold;
+              font-size: 1.2em;
+              color: $highlight;
+            }
+            i{
+              color: $darkgrey;
+            }
+          }
+        }
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 15px;
+  }
+  ul li::before {
+    content: "•";
+    color: $highlight;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  .icon {
+    width: 20px;
+    margin-top: -4px;
+    padding-right: 0.2em;
+    color: $highlight;
+    align-self: center;
+  }
+  h4 {
+    margin-top: 5vh;
+    display: flex;
+  }
+  h2 {
+    margin: 5vh 0 0.2em;
+    display: flex;
+    font-weight: 600;
+    color: #373F49;
+    font-size: 1.2em;
+    clear: both;
+  }
+  .show {
+    background-color: $highlight;
+  }
+  .kasinonBtn {
+    color: gray;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px; 
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%; 
+    margin: auto;
+    border: 1px solid gray;
+  }
+  td {
+    @media (max-width: 700px) {
+      width: 200px;
+    }
+    @media (max-width: 500px) {
+      width:170px;
+    }
+  }
+  .ala {
+    max-width: 1200px; 
+    margin: auto;
+    margin-top: 1em;
+    padding: 0 1em;
+    @media (max-width: 997px) {
+      margin-top: 0;
+      padding: 0;
+    }
+    .saannot p {
+      text-align: center;
+      border-bottom: 1px solid #ebebeb;
+      color: #666666;
+      padding-bottom: 1em;
+      @media (max-width: 997px) {
+        padding: 0 1em 1em;
+        margin-bottom: 0;
+      }
+    }
+    .sidebar {
+      width: 100%;
+      background: $white;
+      position: sticky;
+      padding-bottom: 1em;
+      top: 0;
+      @media (max-width: 997px) {
+        display: block;
+        width: 30%;
+        position: unset;
+        top: unset;
+        float: right;
+        margin: auto;
+        padding: 0.5em 0;
+      }
+      @media (max-width: 786px) {
+        padding: 0;
+      }
+      .pageNav {
+        @media (max-width: 997px) {
+          margin: 1em 0;
+          &:hover .anchor {
+            display: block;
+          }
+        }
+        h5 {
+          margin: 1.2em 1em 0.2em;
+          display: inline;
+          @media (max-width: 997px) {
+            display: none;
+          }
+          @media (max-width:768px) {
+            padding-left: 2em;
+            margin-bottom: 0;
+            padding-top: 0.5em;
+          }
+        }
+        .drop {
+          display: none; 
+          @media(max-width: 997px) {
+            display: block;
+            position: relative;
+            text-align: right;
+            margin-right: 1em;
+            cursor: pointer;
+          }
+        }
+        .anchor {
+          list-style-type: none;
+          margin: 0.2em 0 1em;
+          padding: 0;
+          display: inline;
+          @media (max-width: 997px) {
+            padding-left: 0;
+            display: none;
+            right: 1em;
+            background:#ffffffdb;
+            position: absolute;
+            padding: .2em 1em;
+            margin-top: 0;
+          }
+          @media (max-width: 768px) {
+            margin: 0;
+          }
+          li::before {
+            content: none;
+            width: 0;
+            margin: 0;
+          }
+          li {
+            list-style-type: none;
+            margin: 0 1em;
+            padding: 0.4em 0;
+            text-align: center;
+            display: inline-grid;
+            @media (max-width: 997px) {
+              width: 100%;
+              display: block;
+              text-align: left;
+            }
+            div {
+              cursor: pointer;
+              display: block;
+              font-size: 14px;
+              &:hover, &:active, &:focus, &:visited {
+                color: $highlight;
+              }
+
+              @media (max-width: 997px) {
+                width: 100%;
+              }
+            }
+            .icon {
+              width: 16px;
+              justify-self: center;
+              align-self: self-start;
+              color: $highlight;
+              margin-right: 0.2em;
+              @media (max-width: 997px) {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .content {
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+      @media (max-width: 997px) {
+        width: 90%;
+        float: none;
+        clear: both;
+      }
+      .right, .box {
+        display: flex;
+        @media (max-width: 700px) {
+          display: block !important;
+        }
+        ul {
+          padding-left: 0;
+          margin: .2em 0;
+          li::before {
+            display: none;
+          }
+          .icon {
+            width: 14px;
+            color: $highlight;
+            margin-top: -4px;
+            padding-right: 0.2em;
+            align-self: center;
+          }
+        }
+      }
+      .box {
+        margin-right: 10px;
+        width: 100%;
+        @media (max-width: 970px) {
+          display: block !important;
+        }
+      }
+      .boxContent {
+        width: 37%;
+        float: left;
+        margin: 0 auto;
+        @media (max-width: 970px) {
+          width: 50%;
+          margin: auto;
+          padding-bottom: 20px;
+          float: none;
+          display: inline-block;
+        }
+        @media (max-width: 800px) {
+          width: 90%;
+
+        }
+        &:last-child {
+          @media (max-width: 700px) {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+          }
+        }
+        tr {
+          vertical-align: baseline;
+          td {
+            font-size: 11pt;
+            @media (max-width: 970px) {
+              width: 200px;
+            }
+            @media (max-width: 400px) {
+              width: 160px;
+            }
+          }
+          td.boolean {
+            width: auto;
+          }
+        }
+        .over a {
+          @media (max-width: 360px) { 
+            line-break: anywhere;
+          }
+        }
+      }
+      .bool {
+        width: 25%;
+        @media (max-width: 970px) {
+          width: 90%;
+        }
+      }
+      .left {
+        width: 100%;
+        clear: both;
+        padding: 3vh 0;
+        .ssImg {
+          width: 370px;
+          height: auto;
+          object-fit: contain;
+          float: right;
+          margin: 0 0 10px 10px;
+          @media (max-width: 700px) {
+            float: none;
+            margin: auto;
+            width: 100%;
+            max-width: 370px;
+          }
+        }
+      }
+      .right {
+        @media (max-width:900px) {
+            width: 100%;
+        }
+      }
+      .infoBox {
+        display: flex;
+        @media (max-width: 500px) {
+          display: inline-block;
+        }
+        .info {
+          float: left;
+          width: 50%;
+          margin-bottom: 20px;
+          .yht {
+            padding: 0.2em 0;
+          }
+          @media(max-width: 768px) {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+          }
+          tr {
+            vertical-align: baseline;
+          }
+        }
+      }
+      .talletus {
+        display: flex;
+        ul {
+          width: 100%;
+        }
+      }  
+      .rahat {
+        display: flex;
+        ul {
+          width: 100%;
+        }
+      }  
+      .kasinoText {
+        li p {
+          display: inline-block;
+          margin: auto;
+        }
+      }  
+    }
+    .celeb {
+      margin: 3em auto;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid $highlight;
+      box-shadow: 0 0 5px 0px $highlight;
+      max-width: 400px;
+      .kasinoText {
+        font-style: italic;
+        padding: 1em 1em 0;
+        .quote {
+          width: 18px;
+          color: $highlight;
+        }
+      }
+      .bottom {
+        width: 100%;
+        img {
+          width: 140px;
+          height: 140px;
+          -o-object-fit: cover;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 1px solid #ebebeb;
+          margin: auto;
+        }
+        h5 {
+          font-size: 1em;
+          width: 100%;
+          text-align: center;
+          margin: 1em;
+        }
+      }
+    }
+  }
+  .author {
+    max-width: 1100px;
+    border-top: none;
+  }
+}
+.fixedTop {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  background: $highlight;
+  background: linear-gradient(180deg, #5e3994 30%, #9460df 130%);  
+  opacity: 0;
+  transition: var(--ease);
+  z-index: 2;
+  @media (max-width: 500px) {
+    padding-bottom: 5px;
+  }
+  .rowTop {
+    align-items: center;
+    display: flex;
+    max-width: 550px;
+    width: 100%;
+    padding: 0 10px;
+    margin: auto;
+    color: white;
+    @media (max-width: 500px) {
+      display: block;
+    }
+    .data {
+      display: contents;
+      @media (max-width: 500px) {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+      }
+    }
+    .data2 {
+      width: 50%;
+      img {
+        margin: 1em auto;
+        @media (max-width: 500px) {
+          margin: auto;
+        }
+      }
+    }
+    img {
+      width: 100px;
+      margin: 1em;
+      display: block;
+      order: 1;
+      @media (max-width: 500px) {
+        margin: auto;
+        order: unset;
+        float: left;
+      }
+    }
+    .ctaBtn {
+      @media (max-width: 500px) {
+        width: 50%;
+      }
+    }
+    .bonus {
+      margin: 1em;
+      width: 30%;
+      float: left;
+      order: 2;
+      @media (max-width: 510px) {
+        width: auto;
+      }
+      @media (max-width: 500px) {
+        padding: 0;
+        margin: 0 auto;
+        order: unset;
+        width: 70%;
+        clear: both;
+        float: none;
+        display: block;
+        text-align: center;
+      }
+      h5 {
+        font-weight: normal;
+        font-style: italic;
+        font-size: 13px;
+        margin: 0;
+        text-align: center;
+        @media (max-width: 500px) {
+          display: inline-block;
+        }
+      }
+      p {
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+        @media (max-width:500px) {
+          line-height: 1.1;
+          padding-left: 0.2em;
+          display: inline-block;
+        }
+        @media (max-width:400px) {
+          font-size: 0.8em;
+        }
+      }
+    }
+    .btn {
+      order: 3;
+      border-color: #fff;
+      cursor: pointer;
+      box-shadow: 0 0 7px 0px $white;
+      transition: .5s;
+      @media (max-width: 500px) {
+        order: unset;
+        display: inline-block;
+        margin: .5em 1em;
+        width: 50%;
+        text-align: center;
+        float: right;
+        padding: 5px 8px;
+        align-self: center;
+      }
+      @media (max-width: 340px) {
+        width: 55%;
+      }
+      &:hover {
+        box-shadow: 0 0 10px 1px $highlight;
+        border-color: $highlight;
+      }
+    }
+  }
+  .button {
+    span {
+      font-size: 1em;
+    }
+  }
+  .btn {
+    padding: 7px 50px;
+    border: 2px solid $highlight;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    @media (max-width: 400px) {
+      margin: 0;
+      letter-spacing: 2px;
+      padding: 8px;
+    }
+    &:hover {
+      color: unset;
+      box-shadow: 0 0 10px 0 $white inset, 0 0 10px 4px $white;
+    }
+  }
+}
+.bonusBtn {
+  border: 1px solid $highlight;
+  background: linear-gradient(180deg, $highlight 30%, $highlightLinear 130%);
+  color: $white;
+  border-radius: 7px;
+  padding: 6px 30px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 11pt;
+  margin-top: 2em;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    color: #ffffff;
+  }
+  @media (max-width: 997px) {
+    margin: 2em auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
+}
+.accordions {
+  max-width: 1100px;
+}
